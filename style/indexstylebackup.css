@@ -45,16 +45,16 @@ body {margin:0; font-family:Gill Sans MT; background-color:#ffffff; color:#fffff
 		
 				.navboxleft {margin-left:50pt; margin-top:50pt; margin-right:50pt;}
 		
-				.navboxright {clear:both; float:right; margin-right:50pt; position:relative; top:-250pt;}
+				.navboxright {float:right; margin-right:50pt; position:relative; top:-250pt;}
 		
-				.navboximg {width:250pt; position:relative; height:250pt; top:-63pt; opacity:1; transition:opacity 0.5s;}
+				.navboximg {width:250pt; z-index:10; position:relative; height:250pt; top:-63pt; opacity:1; transition:opacity 0.5s;}
 		
 				.navboxhovertext {opacity:0; text-align:center; position:relative; top:97pt; transition:opacity 0.5s;}
 				
 				.navanchor {display:inline; width:250pt; height:250pt;}
 		
 				.navbox:hover > .navboxhovertext {opacity:1;}
-				.navanchor:hover > .navboximg {opacity:0.1;}
+				.navbox:hover > .navboximg {opacity:0.1;}
 				.navbox:hover > .hoverhrbottom {width:200pt;}
 				.navbox:hover > .hoverhrtop {width:200pt;}
 		
