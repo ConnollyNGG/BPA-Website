@@ -1,0 +1,50 @@
+body {margin:0; font-family:Gill Sans MT; background-color:#ffffff; color:#ffffff; min-width:900px;}
+
+	/*Main Content (Home Page)*/
+
+	.introdiv {background-color:rgba(31,55,127,1); margin:0; margin-top:50pt; padding:5pt; text-align:center; font-size:12pt;}
+
+	.introwrapper {width:50%; min-width:800px; margin:auto;}
+
+	header {height:120pt; width:100%; background-color:rgba(31,55,127,1); text-align:center;}
+
+		.introh1{text-align:center; font-size:50pt; line-height:75pt;}
+
+			.logo {height:60pt; width:108pt; float:left; margin-left:5pt; position:relative; top:-100pt;}
+			
+			/*Facebook Logo Link*/
+		
+			.socmedianav {width:45pt; height:45pt; float:right; position:relative; top:-95pt; margin-right:10pt; border-radius:22.5pt;}
+		
+			.socmedia {height:45pt; width:45pt; position:relative; border-radius:22.5pt; transition:opacity 1s; opacity:1;}
+		
+			.socmediahover {height:45pt; top:-48pt; left:0pt; width:45pt; position:relative; opacity:0; transition:opacity 1s; border-radius:22.5pt;}
+			
+			.socmedianav:hover > .socmedia {opacity:0;}
+			.socmedianav:hover > .socmediahover {opacity:1;}
+			
+	/*Navigation Bar Elements*/
+
+	nav {text-align:center; color:#ffffff; font-size:11.3pt; font-family:Gill Sans MT; position:relative; left:-28pt;}
+
+		.navdiv {display:inline-block; height:20pt; background-color:rgba(31,55,127,1); margin:auto;  margin-top:-14pt; line-height:20pt; font-weight:bold; transition:background-color 1s, color 1s; border-radius:5pt;}
+
+		.navdiv:hover {background-color:#ffffff; color:rgba(31,55,127,1);}
+
+		.navtext {position:relative; bottom:11pt;}
+
+		a {color:#ffffff; border-width:0px;}
+	
+		a:visited {color:#ffffff;}
+		
+		/*Located in the main body of the page rather than in the navigation bar*/
+		
+		.navbox {width:250pt; height:250pt; background-color:rgba(31,55,127,1); margin-top:50pt; margin-left:50pt;}
+		
+		.navboxtext {padding:5pt; background-color:rgba(31,55,127,1); margin-left:50pt; margin-right:50pt; height:240pt; float:right; margin-top:50pt; width:calc(100% - 400pt);}
+		
+		.navboxheader {position:relative; top:-10pt; left:8pt;}
+		
+		.navhr {width:95%; position:relative; top:-14pt; border-width:1px; color:#ffffff;}
+		
+	ul{background-color:rgba(31,55,127,1);}
