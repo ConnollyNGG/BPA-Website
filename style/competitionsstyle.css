@@ -1,10 +1,24 @@
 body {margin:0; font-family:Gill Sans MT; background-color:#ffffff; color:#ffffff; min-width:900px;}
 
-	/*Main Content (Home Page)*/
+	/*Main Content*/
 
 	.introdiv {background-color:rgba(31,55,127,1); margin:0; margin-top:50pt; padding:5pt; text-align:center; font-size:12pt;}
 
 	.introwrapper {width:50%; min-width:800px; margin:auto;}
+	
+	.dropdown {display:block; width:300pt; height:30pt; background-color:rgba(31,55,127,1); margin:auto; border:2px #ffffff solid; border-radius:10pt; line-height:30pt; overflow:hidden; transition:height 1s;}
+	
+	#drop2.dropdownactive {height:500pt;}
+	
+	.dropdowntitle {display:block; width:300pt; height:30pt; background-color:rgba(31,55,127,1); border-radius:10pt; margin:auto; cursor:pointer; transition:color 1s, background-color 1s;}
+	
+	.dropdowntitle:hover {color:rgba(31,55,127,1); background-color:#ffffff; transition:color 1s, background-color 1s;}
+	
+	.dropdownactive {display:block; width:300pt; height:275pt; background-color:rgba(31,55,127,1); margin:auto; border:2px #ffffff solid; border-radius:10pt; line-height:30pt; overflow:hidden; transition:height 1s;}
+	
+	.downarrow {display:inline-block; transform:rotate(0deg); transition:transform 1s;}
+	
+	.downarrowactive {transform:rotate(180deg); display:inline-block; transition:transform 1s;}
 
 	header {height:120pt; width:100%; background-color:rgba(31,55,127,1)}
 
