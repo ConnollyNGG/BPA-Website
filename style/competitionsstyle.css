@@ -10,7 +10,7 @@ body {margin:0; font-family:Gill Sans MT; background-color:#ffffff; color:#fffff
 	
 	#drop2.dropdownactive {height:500pt;}
 	
-	.dropdowntitle {display:block; width:300pt; height:30pt; background-color:rgba(31,55,127,1); border-radius:10pt; margin:auto; cursor:pointer; transition:color 1s, background-color 1s;}
+	.dropdowntitle {display:block; width:304pt; height:31pt; background-color:rgba(31,55,127,1); border-radius:0pt; margin:auto; cursor:pointer; transition:color 1s, background-color 1s; position:relative; top:-15pt;}
 	
 	.dropdowntitle:hover {color:rgba(31,55,127,1); background-color:#ffffff; transition:color 1s, background-color 1s;}
 	
