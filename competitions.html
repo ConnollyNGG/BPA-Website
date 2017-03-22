@@ -10,6 +10,28 @@
 		
 		<link rel="stylesheet" href="style/competitionsstyle.css">
 		
+		<script>
+		
+			var x = 0;
+		
+			function dropDown(n)
+				{
+				if (x == 0)
+					{
+					document.getElementById("drop"+n) .className = "dropdownactive";
+					document.getElementById("downarrow"+n).className = "downarrowactive";
+					x++;
+					}
+					else
+					{
+					document.getElementById("drop"+n).className = "dropdown";
+					document.getElementById("downarrow"+n).className = "downarrow";
+					x--;
+					}
+				}
+				
+		</script>
+		
 	</head>
 	
 	<body>
@@ -76,7 +98,7 @@
 				
 				<a href="news.html">
 					
-					<div style="width:120pt;" class="navdiv">
+					<div style="width:40pt;" class="navdiv">
 					
 						<p class="navtext">NEWS</p>
 						
@@ -112,7 +134,121 @@
 		
 			<div class="introwrapper">
 		
-				<p>Business Professionals of America hosts a multitude of leadership conferences each year where members may choose to </p>
+				<p>Business Professionals of America hosts a multitude of leadership conferences each year where members may choose to participate in competitions and events and the regional, state, and national levels. Both team and individual events are available in a wide range of different subjects from web development and prepared speeches to financial analysis. Below is a list of different competitions that Business Professionals of America hosts. Team and individual events will be differentiated, and some events are only available to high school students while others are only available to people enrolled in a postsecondary institution.</p>
+				
+				<div class="dropdown" id="drop1">
+				
+					<div class="dropdowntitle" onclick="dropDown(1)">
+					
+						<h2>VIRTUAL COMPETITIONS <span class="downarrow" id="downarrow1">&#9660;</span></h2>
+						
+					</div>
+					
+					<div class="competitionlink">
+					
+						<a class="textcolor">&nbsp;&nbsp;(V01)Virtual Multimedia and Promotion - Individual</a>
+						
+					</div>
+					
+					<div class="competitionlink">
+							
+						<a class="textcolor">&nbsp;&nbsp;(V02)Virtual Multimedia and Promotion - Team</a> 
+						
+					</div>
+						
+					<div class="competitionlink">
+							
+						<a class="textcolor">&nbsp;&nbsp;(V03)Software Engineering Team</a>
+						
+					</div>
+						
+					<div class="competitionlink">
+							
+						<a class="textcolor">&nbsp;&nbsp;(V04)Web Application Team</a>
+						
+					</div>
+						
+					<div class="competitionlink">
+							
+						<a class="textcolor">&nbsp;&nbsp;(V05)Mobile Applications</a>
+						
+					</div>
+						
+					<div class="competitionlink">
+							
+						<a class="textcolor">&nbsp;&nbsp;(V06)Promotional Photography</a>
+						
+					</div>
+						
+					<div class="competitionlink">
+							
+						<a class="textcolor">&nbsp;&nbsp;(V08)Start-up Enterprise Team-Pilot</a>
+						
+					</div>
+					
+					</span>
+						
+				</div>
+				
+				<br>
+				
+				<div class="dropdown" id="drop2">
+				
+					<div class="dropdowntitle" onclick="dropDown(2)">
+					
+						<h2>FINANCE COMPETITIONS <span class="downarrow" id="downarrow2">&#9660;</span></h2>
+						
+					</div>
+					
+					<span class="talign">
+					
+						(100)Fundamental Accounting(Secondary)<br>
+						
+						(105)College Accounting(Postsecondary)<br>
+							
+						(110)Advanced Accounting(Secondary)<br>
+							
+						(115)Advanced College Accounting(Postsecondary)<br>
+							
+						(125)Payroll Accounting(Secondary)<br>
+							
+						(130)College Payroll Accounting(Postsecondary)<br>
+							
+						(135)Managerial Accounting(Postsecondary)<br>
+							
+						(140)Federal Income TaxAccounting(Postsecondary)<br>
+							
+						(145)Banking and Finance<br>
+							
+						(150)Financial Analyst Team<br>
+							
+						(155)Economic Research Individual(Secondary)<br>
+							
+						(160)Economic Research Team(Secondary)<br>
+							
+						(165)Personal Financial Management<br>
+							
+						(190)Financial Math and Analysis Concepts - Open<br>
+							
+						(193)Accounting Mathmatics Concepts - Open - Pilot<br>
+					
+					</span>
+					
+				</div>
+						
+					BUSINESS ADMINISTRATION<br><br>
+					
+						(200)Fundamental Word Processing<br>
+						(210)Advanced Word Processing<br>
+						(215)Integrated Office Applications<br>
+						(220)Basic Office Systems and Procedures<br>
+						(225)Advanced Office Systems and Procedures<br>
+						(230)Fundamental Spreadsheet Applications<br>
+						(235)Advanced Spreadsheet Applications<br>
+						(240)Database Applications<br>
+						()<br>
+						
+				</div>
 				
 			</div>
 		
