@@ -12,6 +12,7 @@ body {margin:0; font-family:Gill Sans MT; background-color:#ffffff; color:#fffff
 	
 	.dropdowntitle {display:block; width:304pt; height:31pt; background-color:rgba(31,55,127,1); border-radius:0pt; margin:auto; cursor:pointer; transition:color 1s, background-color 1s; position:relative; top:-15pt;}
 	
+<<<<<<< HEAD
 	.competitionlink {text-align:left; font-size:12pt; background-color:rgba(31,55,127,1); color:#ffffff; transition:background-color 1s; width:300pt; height:30pt;}
 	
 	.competitionlink > a {transition:color 1s;}
@@ -22,13 +23,20 @@ body {margin:0; font-family:Gill Sans MT; background-color:#ffffff; color:#fffff
 	
 	.competitionlink:hover > a {color:rgba(31,55,127,1); transition:color 1s;}
 	
+=======
+	.dropdowntitle:hover {color:rgba(31,55,127,1); background-color:#ffffff; transition:color 1s, background-color 1s;}
+	
+>>>>>>> refs/remotes/origin/Brendin
 	.dropdownactive {display:block; width:300pt; height:275pt; background-color:rgba(31,55,127,1); margin:auto; border:2px #ffffff solid; border-radius:10pt; line-height:30pt; overflow:hidden; transition:height 1s;}
 	
 	.downarrow {display:inline-block; transform:rotate(0deg); transition:transform 1s;}
 	
 	.downarrowactive {transform:rotate(180deg); display:inline-block; transition:transform 1s;}
+<<<<<<< HEAD
 	
 	
+=======
+>>>>>>> refs/remotes/origin/Brendin
 
 	header {height:120pt; width:100%; background-color:rgba(31,55,127,1)}
 
