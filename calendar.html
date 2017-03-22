@@ -10,9 +10,6 @@
 		
 		<link rel="stylesheet" href="style/calendarstyle.css">
 		
-		<style type="text/css">
-			TD, TH {text-align:center}
-		</style>
 
 		<script language="JavaScript">
 			/*******************
@@ -27,6 +24,7 @@
 			function getMonthLen(theYear, theMonth) {
 			    var oneDay = 1000 * 60 * 60 * 24
 			    var thisMonth = new Date(theYear, theMonth, 1)
+			    var lastMonth = new Date(theYear, theMonth - 1, 1)
 			    var nextMonth = new Date(theYear, theMonth + 1, 1)
 			    var len = Math.ceil((nextMonth.getTime() - 
 			        thisMonth.getTime())/oneDay)
@@ -127,13 +125,13 @@
 
 		<header>
 	
-			<h1 class="introh1">CALENDAR</h1>
+			<h1 class="introh1">CARLSON BPA</h1>
 			
 			<a href="facebook">
 			
 				<div class="socmedianav">
 				
-					<img class="socmedia" src="images/fb.jpg">
+					<img border="2" class="socmedia" src="images/fb.jpg">
 				
 					<img class="socmediahover" src="images/fb_hov.jpg">
 					
@@ -187,7 +185,7 @@
 				
 				<a href="news.html">
 					
-					<div style="width:40pt;" class="navdiv">
+					<div style="width:42pt;" class="navdiv">
 					
 						<p class="navtext">NEWS</p>
 						
@@ -197,7 +195,7 @@
 				
 				<a href="gallery.html">
 					
-					<div style="width:60pt;"class="navdiv">
+					<div style="width:60pt;" class="navdiv">
 					
 						<p class="navtext">GALLERY</p>
 						
@@ -248,10 +246,10 @@
 			<tbody id="tableBody"></tbody>
 
 			<tr>
-			    <td colspan=7>
+			    <td style="text-align: center; vertical-align: middle;" colspan=7>
 				    <p>
 					    <form name="dateChooser">
-						        <select name="chooseMonth" 
+						        <select class="dateselector1" name="chooseMonth" 
 						        onChange="populateTable(this.form)">
 						            <option selected>January
 
@@ -277,13 +275,41 @@
 
 						            <option>December
 						    </select>
-						    <select name="chooseYear" onChange="populateTable(this.form)">
+						    <div class="divider"></div>
+						    <select class="dateselector2" name="chooseYear" onChange="populateTable(this.form)">
 						    </select>
 					    </form>
 				    </P>
 			    </td>
 			</tr>
 		</table>
+
+		<div id="Contents" class="content">
+		
+			<p class="ftitle">
+			
+				Carlson High School
+
+			</p>
+			<hr class="fline">
+
+			<div class="fcredits">Designed by:</div>
+			
+			<div id="Credits" class="marquee">
+
+				<p>
+					Meme Master /&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Consultant /&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Graphic Designer /
+					<br>
+					<br>
+					&nbsp;&nbsp;Developer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Developer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Developer
+					<br>
+					<br>
+					<br>
+					Brendin Lang&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Robert Glista&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sam Belaire
+				</p>
+
+			</div>
+		</div>
+
 	</body>
-	
 </html>

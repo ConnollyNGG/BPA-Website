@@ -6,22 +6,22 @@ body {margin:0; font-family:Gill Sans MT; background-color:#ffffff; color:#fffff
 
 	.introwrapper {width:50%; min-width:800px; margin:auto;}
 
-	header {height:120pt; width:100%; background-color:rgba(31,55,127,1)}
+header {height:120pt; width:100%; background-color:rgba(31,55,127,1)}
 
-		.introh1{text-align:center; font-size:50pt; line-height:75pt;}
+	.introh1{text-align:center; font-size:50pt; line-height:75pt;}
 
-		.logo {height:60pt; width:108pt; float:left; margin-left:5pt; position:relative; top:-100pt;}
-			
-		/*Facebook Logo Link*/
+	.logo {height:60pt; width:108pt; float:left; margin-left:5pt; position:relative; top:-100pt;}
 		
-		.socmedianav {width:45pt; height:45pt; float:right; position:relative; top:-95pt; margin-right:10pt; border-radius:22.5pt;}
+	/*Facebook Logo Link*/
+	
+	.socmedianav {width:45pt; height:45pt; float:right; position:relative; top:-95pt; margin-right:10pt; border-radius:22.5pt;}
+	
+		.socmedia {height:45pt; width:45pt; position:relative; border-radius:22.5pt; transition:opacity 1s; opacity:1;}
+	
+		.socmediahover {height:46pt; top:-50.5pt; left:1pt; width:45pt; position:relative; opacity:0; transition:opacity 1s; border-radius:22.5pt;}
 		
-			.socmedia {height:43pt; width:43pt; position:relative; border-radius:22.5pt; transition:opacity 1s; opacity:1;}
-		
-			.socmediahover {height:45pt; top:-48pt; left:0pt; width:45pt; position:relative; opacity:0; transition:opacity 1s; border-radius:22.5pt;}
-			
-			.socmedianav:hover > .socmedia {opacity:0;}
-			.socmedianav:hover > .socmediahover {opacity:1;}
+		.socmedianav:hover > .socmedia {opacity:0;}
+		.socmedianav:hover > .socmediahover {opacity:1;}
 			
 	/*Navigation Bar Elements*/
 
@@ -34,7 +34,7 @@ body {margin:0; font-family:Gill Sans MT; background-color:#ffffff; color:#fffff
 		.navtext {position:relative; bottom:11pt;}
 
 		a {color:#ffffff; border-width:0px; text-decoration:none;}
-	
+
 		a:visited {color:#ffffff;}
 		
 		/*Located in the main body of the page rather than in the navigation bar*/
@@ -45,9 +45,9 @@ body {margin:0; font-family:Gill Sans MT; background-color:#ffffff; color:#fffff
 		
 				.navboxleft {margin-left:50pt; margin-top:50pt; margin-right:50pt;}
 		
-				.navboxright {clear:both; float:right; margin-right:50pt; position:relative; top:-250pt;}
+				.navboxright {float:right; margin-right:50pt; position:relative; top:-250pt;}
 		
-				.navboximg {width:250pt; position:relative; height:250pt; top:-63pt; opacity:1; transition:opacity 0.5s;}
+				.navboximg {width:250pt; z-index:10; position:relative; height:250pt; top:-63pt; opacity:1; transition:opacity 0.5s;}
 		
 				.navboxhovertext {opacity:0; text-align:center; position:relative; top:97pt; transition:opacity 0.5s;}
 				
@@ -62,4 +62,83 @@ body {margin:0; font-family:Gill Sans MT; background-color:#ffffff; color:#fffff
 				
 				.hoverhrbottom {width:0pt; color:#ffffff; margin:auto; position:relative; top:37pt; transition:width 1s;}
 		
-	footer {margin-top:50pt; background-color:rgba(31,55,127,1); width:100%; height:120pt;}
+
+	.content {
+		flex: 1;
+		background-color: rgba(31,55,127,1);
+		width: 100%;
+		min-width: 900px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.ftitle	{
+		text-align: center;
+		vertical-align: middle;
+		font-size: 30pt;
+		margin-top: 10px;
+		margin-bottom: 0;
+	}
+
+	.fline {
+	  height: 1px;
+	  margin: 25px;
+	  margin-top: 10px;
+	  background: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, 0)), color-stop(0.5, #333333), to(rgba(0, 0, 0, 0)));
+	  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), #333333, rgba(0, 0, 0, 0));
+	  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0), #333333, rgba(0, 0, 0, 0));
+	  background: -o-linear-gradient(left, rgba(0, 0, 0, 0), #333333, rgba(0, 0, 0, 0));
+	  background: linear-gradient(left, rgba(0, 0, 0, 0), #333333, rgba(0, 0, 0, 0));
+	  border: 0;
+	}
+
+	.fline:after {
+	  display: block;
+	  content: '';
+	  height: 5px;
+	  background-image: -webkit-gradient(radial, 50% 0%, 0, 50% 0%, 116, color-stop(0%, #cccccc), color-stop(100%, rgba(255, 255, 255, 0)));
+	  background-image: -webkit-radial-gradient(center top, farthest-side, #cccccc 0%, rgba(255, 255, 255, 0) 100%);
+	  background-image: -moz-radial-gradient(center top, farthest-side, #cccccc 0%, rgba(255, 255, 255, 0) 100%);
+	  background-image: -o-radial-gradient(center top, farthest-side, #cccccc 0%, rgba(255, 255, 255, 0) 100%);
+	  background-image: radial-gradient(farthest-side at center top, #cccccc 0%, rgba(255, 255, 255, 0) 100%);
+	}
+
+	.marquee {
+	    width: 75%;
+	    line-height: 10px;
+	    color: white;
+	    white-space: nowrap;
+	    margin: 0 auto;
+	    overflow: hidden;
+	    margin-bottom: 10px;
+	    margin-top: 5px;
+	    box-sizing: border-box;
+	    background-color: rgba(88, 88, 88, .4);
+	    border: solid;
+	    border-color: #000000;
+	}
+
+	.marquee p {
+	    display: inline-block;
+	    padding-left: 100%;
+	    opacity: 5;
+	    animation: marquee 45s linear infinite;
+	}
+
+	.desc:hover {
+    	animation-play-state: paused
+	}
+
+	@keyframes marquee {
+	    0%   { transform: translate(-100%, 0); }
+	    100% { transform: translate(0, 0); }
+	    }
+
+	.fcredits {
+		text-align: center;
+		vertical-align: middle;
+		font-size: 25pt;
+		margin-bottom: 0;
+		word-spacing: 3px;
+		letter-spacing: 2px;
+	}
